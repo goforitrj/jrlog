@@ -18,7 +18,7 @@ export const getNote = createPromiseThunk('GET_NOTE', notesAPI.getNote);
 
 const initialState = {
     notes: reduerUtils.initial(),
-    node: reduerUtils.initial()
+    note: reduerUtils.initial()
 };
 
 export default function notes(state = initialState, action) {

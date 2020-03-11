@@ -1,12 +1,13 @@
 import React from 'react';
-import CounterContainer from './containers/CounterContainer';
-import NoteListContainer from './containers/NoteListContainer';
+import { Route } from 'react-router-dom';
+import NoteListPage from './pages/NoteListPage';
+import NotePage from './pages/NotePage';
 
 function App() {
     return (
         <div className="App">
-            <CounterContainer></CounterContainer>
-            <NoteListContainer></NoteListContainer>
+            <Route path="/" component={NoteListPage} exact={true} />
+            <Route path="/:id" component={NotePage} />
         </div>
     );
 }
