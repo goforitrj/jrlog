@@ -1,5 +1,9 @@
 import * as notesAPI from '../api/notes';
-import { createPromiseThunk, reduerUtils } from '../lib/asyncUtils';
+import {
+    createPromiseThunk,
+    reduerUtils,
+    handleAsyncActions
+} from '../lib/asyncUtils';
 // action types
 const GET_NOTES = 'GET_NOTES';
 const GET_NOTES_SUCCESS = 'GET_NOTES_SUCCESS';
@@ -20,35 +24,13 @@ const initialState = {
 export default function notes(state = initialState, action) {
     switch (action.type) {
         case GET_NOTES:
-            return {
-                ...state,
-                notes: reduerUtils.loading()
-            };
         case GET_NOTES_SUCCESS:
-            return {
-                ...state,
-                notes: reduerUtils.success(action.notes)
-            };
         case GET_NOTES_ERROR:
-            return {
-                ...state,
-                notes: reduerUtils.error(action.error)
-            };
+            return handleAsyncActions('GET_NOTES', 'notes')(state, action);
         case GET_NOTE:
-            return {
-                ...state,
-                notes: reduerUtils.loading()
-            };
         case GET_NOTE_SUCCESS:
-            return {
-                ...state,
-                note: reduerUtils.success(action.note)
-            };
         case GET_NOTE_ERROR:
-            return {
-                ...state,
-                note: reduerUtils.error(action.error)
-            };
+            return handleAsyncActions('GET_NOTE', 'note')(state, action);
         default:
             return state;
     }

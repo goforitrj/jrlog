@@ -42,12 +42,12 @@ const notes = [
     }
 ];
 
-export const getPosts = async () => {
+export const getNotes = async () => {
     await sleep(500);
     return notes;
 };
 
-export const getPostById = async id => {
+export const getNote = async id => {
     await sleep(1000);
     return notes.find(note => note.id === id);
 };
