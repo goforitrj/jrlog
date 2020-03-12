@@ -1,0 +1,16 @@
+article.third-article {
+    padding: 20% 30%;
+    background-size: cover;
+    background-attachment: scroll, fixed;
+    background-image: linear-gradient(
+            180deg,
+            rgba(17, 17, 17, 0.5),
+            rgba(17, 17, 17, 0.5)
+        ),
+        url('../../assets/image/laptop.jpg');
+    p {
+        font-size: 1.1em;
+        color: white;
+        line-height: 1.4em;
+    }
+}
