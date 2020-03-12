@@ -4,9 +4,9 @@ import './StoryNavStyle.scss';
 const StoryNav = () => {
     return (
         <nav id="home-nav">
-            <a className="nav-icon" href="#">
+            <span className="nav-icon">
                 SJR
-            </a>
+            </span>
             <div className="nav-info">
                 <h1 className="nav-info-title">Jarang Stephanie Seo</h1>
                 <div className="nav-info-description">Frontend Developer</div>
