@@ -1,8 +1,8 @@
 import React from 'react';
-import MainContainer from '../containers/StoryContainer';
+import StoryContainer from '../containers/StoryContainer';
 
 function StoryPage() {
-    return <MainContainer></MainContainer>;
+    return <StoryContainer></StoryContainer>;
 }
 
 export default StoryPage;
