@@ -1,0 +1,26 @@
+header {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    cursor: pointer;
+    #menu-list {
+        ul {
+            display: flex;
+            .text-link {
+                font-size: 0.9em;
+                font-weight: bold;
+                border: 1px solid gray;
+                padding: 0 10px;
+                margin-left: 0.5rem;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                &:hover {
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+    }
+}

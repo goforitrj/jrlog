@@ -3,7 +3,7 @@ import './ThirdArticle.scss';
 
 const ThirdArticle = () => {
     return (
-        <article class="third-article">
+        <article className="third-article">
             <p>
                 I like to consistently challenge myself rather than remain in a
                 comfort zone. For instance, I once accepted an opportunity to

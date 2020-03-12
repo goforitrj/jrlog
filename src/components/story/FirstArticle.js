@@ -21,7 +21,7 @@ const FirstArticle = () => {
                 </div>
             </div>
             <div className="info-right">
-                <div className="button-area sns-button-area before">
+                <div className="button-area sns-button-area after">
                     <div className="button">
                         <a href="https://github.com/goforitrj" target="_blank">
                             <i className="fab fa-github"></i>

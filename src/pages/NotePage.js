@@ -6,10 +6,10 @@ function NotePage({ match }) {
     const { id } = match.params;
 
     return (
-        <div>
+        <section id="home-section">
             <NoteContainer noteId={parseInt(id, 10)} />
             <CounterContainer />
-        </div>
+        </section>
     );
 }
 

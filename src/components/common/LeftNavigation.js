@@ -1,12 +1,10 @@
 import React from 'react';
-import './StoryNavStyle.scss';
+import './LeftNavigation.scss';
 
 const StoryNav = () => {
     return (
         <nav id="home-nav">
-            <span className="nav-icon">
-                SJR
-            </span>
+            <span className="nav-icon">SJR</span>
             <div className="nav-info">
                 <h1 className="nav-info-title">Jarang Stephanie Seo</h1>
                 <div className="nav-info-description">Frontend Developer</div>
